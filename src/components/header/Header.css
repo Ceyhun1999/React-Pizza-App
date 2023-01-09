@@ -1,0 +1,7 @@
+header button {
+    font-size: 2rem !important;
+}
+
+header button>span {
+    font-size: .8rem !important;
+}
