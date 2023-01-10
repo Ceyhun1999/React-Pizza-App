@@ -796,6 +796,13 @@ export default class App extends Component {
         return (
             <div className="App">
                 <Header handleShow={this.handleShow} number={number} onTotalPrice={this.onTotalPrice} />
+                <div
+                    style={{
+                        width: "100%",
+                        height: "500px",
+                        background: "url('./assets/img/headerBg.jpg')"
+                    }}
+                ></div>
                 <Main
                     data={newData}
                     addToOrder={this.addToOrder}

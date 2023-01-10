@@ -4,9 +4,9 @@ import "./Header.css";
 
 export default function Header({ handleShow, number, onTotalPrice }) {
     return (
-        <header className="bg-warning py-2">
+        <header className="bg-dark py-2">
             <Container className="d-flex justify-content-between">
-                <h1>Pizza App</h1>
+                <h1 className="text-warning">Pizza App</h1>
                 <Button
                     variant="success"
                     onClick={() => {
