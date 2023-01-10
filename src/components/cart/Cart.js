@@ -4,8 +4,7 @@ import "./Cart.css";
 
 export default class Cart extends Component {
     render() {
-        let { show, handleClose, order } = this.props;
-
+        let { show, handleClose, order, totalPrice } = this.props;
         return (
             <Modal show={show} onHide={handleClose} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
                 <Modal.Header closeButton>
@@ -30,10 +29,10 @@ export default class Cart extends Component {
                                 let { id, img, name, size, price, stateSize, quant } = item;
                                 let { quantChange, deleteOrder } = this.props;
                                 return (
-                                    <tr className="align-middle" key={id}>
+                                    <tr className="align-middle border border-light" key={id}>
                                         <td>{index + 1}</td>
                                         <td>
-                                            <img className="thumb" src={"./assets/img/pizzas/" + img} alt="" />
+                                            <img style={{ width: "60px" }} src={"./assets/img/pizzas/" + img} alt="" />
                                         </td>
                                         <td>{name}</td>
                                         <td>{size[stateSize]}</td>
@@ -72,14 +71,14 @@ export default class Cart extends Component {
                                 );
                             })}
                         </tbody>
-                        <tbody>
-                            <td className="a text-end" colspan="7">
-                                
-                            </td>
+                        <tbody className="a">
+                            <tr className="text-center border  border-light">
+                                <td colSpan="8">Ümumi qiymət {totalPrice} ₼</td>
+                            </tr>
                         </tbody>
                     </Table>
                 </Modal.Body>
-                <Modal.Footer>
+                <Modal.Footer className="border-0">
                     <Button variant="secondary" onClick={handleClose}>
                         Close
                     </Button>

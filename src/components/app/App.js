@@ -681,6 +681,7 @@ export default class App extends Component {
             smShow: false,
             cartMiniText: "Sifariş əlavə olundu",
             cartMiniTextColor: "text-warning",
+            totalPrice: 0,
         };
     }
 
@@ -755,6 +756,8 @@ export default class App extends Component {
         this.setState(({ order }) => ({
             order: newOrder,
         }));
+
+        this.onTotalPrice();
     };
 
     deleteOrder = (id) => {
@@ -778,11 +781,21 @@ export default class App extends Component {
         console.log();
     };
 
+    onTotalPrice = () => {
+        let newOrder = this.state.order;
+        let total = newOrder.map((item) => item.price[item.stateSize] * item.quant);
+        if (total.length !== 0) {
+            this.setState({
+                totalPrice: total.reduce((a, b) => a + b),
+            });
+        }
+    };
+
     render() {
-        let { show, smShow, order, number, cartMiniText, cartMiniTextColor, newData } = this.state;
+        let { show, smShow, order, number, cartMiniText, cartMiniTextColor, newData, totalPrice } = this.state;
         return (
             <div className="App">
-                <Header handleShow={this.handleShow} number={number} />
+                <Header handleShow={this.handleShow} number={number} onTotalPrice={this.onTotalPrice} />
                 <Main
                     data={newData}
                     addToOrder={this.addToOrder}
@@ -798,6 +811,7 @@ export default class App extends Component {
                     handleClose={this.handleClose}
                     order={order}
                     deleteOrder={this.deleteOrder}
+                    totalPrice={totalPrice}
                 />
                 <CartMini
                     cartMiniText={cartMiniText}
