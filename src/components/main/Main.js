@@ -5,10 +5,10 @@ import "./Main.css";
 
 export default function Main(props) {
     return (
-        <main className="p-4">
+        <main>
+            <Filter data={props.data} filterData={props.filterData} searchData={props.searchData} />
             <Container>
-                <Filter data={props.data} filterData={props.filterData} searchData={props.searchData} />
-                <Pizzas {...props} />
+                <Pizzas className="p-4" {...props} />
             </Container>
         </main>
     );

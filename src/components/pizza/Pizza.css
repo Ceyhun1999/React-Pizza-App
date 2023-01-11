@@ -5,8 +5,10 @@
     cursor: pointer;
 }
 .card {
-    box-shadow: 0 0 2px 1px;
-
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.col img {
+    height: 220px;
 }
 
 .magazine_card {
@@ -144,6 +146,46 @@
     100% {
         transform: rotate(45deg);
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .col .shadow {
+        box-shadow: inset 0 0 10px 4px;
+        background: rgba(0, 0, 0, .4);
+    
+        transform: scale(.85);
+    }
+    
+    .col .magazine_title {
+        transform: translateY(-310%);
+        background: transparent;
+    }
+    
+    .col .magazine_desc {
+        transform: translateY(-120%);
+        opacity: 1;
+        transition-delay: .6s;
+    }
+    
+    .col .splitter {
+        transform: translateY(-12em);
+        left: 10%;
+        width: 80%;
+        opacity: 1;
+    }
+    
+    .col .splitter::before {
+        transform: rotate(-20deg);
+        transition-delay: .6s;
+        opacity: .6;
+    }
+    
+    .col .splitter::after {
+        transform: rotate(20deg);
+        transition-delay: .6s;
+        opacity: .6;
+    }
+    
 }
 
 

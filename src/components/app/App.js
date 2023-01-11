@@ -2,7 +2,6 @@ import Header from "../header/Header";
 import Main from "../main/Main";
 import Footer from "../footer/Footer";
 import Cart from "../cart/Cart";
-import CartMini from "../cartMini/CartMini";
 
 import "./App.css";
 import { Component } from "react";
@@ -678,9 +677,6 @@ export default class App extends Component {
             order: [],
             newData: data,
             number: 0,
-            smShow: false,
-            cartMiniText: "Sifariş əlavə olundu",
-            cartMiniTextColor: "text-warning",
             totalPrice: 0,
         };
     }
@@ -729,10 +725,15 @@ export default class App extends Component {
                 cartMiniTextColor: "text-warning",
             });
         } else {
+            let index = newOrder.findIndex((item) => item.id === id);
+            let addedPizza = newOrder[index];
+            newOrder.splice(index, 1);
+            addedPizza.quant = addedPizza.quant + 1;
+            newOrder.splice(index, 0, addedPizza);
             this.setState({
-                cartMiniText: "Bu sifariş səbəttə artıq mövcuddur",
-                cartMiniTextColor: "text-danger",
+                order: newOrder,
             });
+            console.log(this.state.order);
         }
     };
 
@@ -792,15 +793,15 @@ export default class App extends Component {
     };
 
     render() {
-        let { show, smShow, order, number, cartMiniText, cartMiniTextColor, newData, totalPrice } = this.state;
+        let { show, order, number, newData, totalPrice } = this.state;
         return (
             <div className="App">
                 <Header handleShow={this.handleShow} number={number} onTotalPrice={this.onTotalPrice} />
                 <div
                     style={{
                         width: "100%",
-                        height: "500px",
-                        background: "url('./assets/img/headerBg.jpg')"
+                        height: "calc(100vh - 80px)",
+                        background: "url('./assets/img/headerBg.jpg')",
                     }}
                 ></div>
                 <Main
@@ -819,13 +820,6 @@ export default class App extends Component {
                     order={order}
                     deleteOrder={this.deleteOrder}
                     totalPrice={totalPrice}
-                />
-                <CartMini
-                    cartMiniText={cartMiniText}
-                    cartMiniTextColor={cartMiniTextColor}
-                    smShow={smShow}
-                    handleSmShow={this.handleSmShow}
-                    handleSmClose={this.handleSmClose}
                 />
             </div>
         );

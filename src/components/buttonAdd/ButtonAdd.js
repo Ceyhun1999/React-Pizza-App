@@ -5,26 +5,48 @@ export default class ButtonAdd extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            flag: false,
+            flagBtn: false,
+            flagClick: true,
         };
     }
 
+    setInterval = () => {
+        setTimeout(() => {
+            this.setState(({ flagClick, flagBtn }) => ({
+                flagBtn: !flagBtn,
+                flagClick: !flagClick,
+            }));
+        }, 2000);
+    };
+
     changeClass = () => {
-        this.setState(({ flag }) => ({
-            flag: !flag,
-        }));
+        if (this.state.flagClick) {
+            this.setState(({ flagClick, flagBtn }) => ({
+                flagClick: !flagClick,
+                flagBtn: !flagBtn,
+            }));
+            this.setInterval();
+        }
     };
 
     render() {
         let classAdd = "add-to-cart-button";
-        if (this.state.flag) {
+        if (this.state.flagBtn) {
             classAdd += " added";
         } else {
             classAdd = "add-to-cart-button";
         }
         return (
             <div className="containerBtn">
-                <button onClick={this.changeClass} className={classAdd}>
+                <button
+                    onClick={() => {
+                        this.changeClass();
+                        if (this.state.flagClick) {
+                            this.props.onClick();
+                        }
+                    }}
+                    className={classAdd}
+                >
                     <svg
                         className="add-to-cart-box box-1"
                         width="24"
@@ -69,7 +91,7 @@ export default class ButtonAdd extends Component {
                         />
                     </svg>
                     <span className="add-to-cart">Sifariş et</span>
-                    <span className="added-to-cart">Sifarişi imtina et</span>
+                    <span className="added-to-cart">Səbətə əlavə olundu</span>
                 </button>
             </div>
         );

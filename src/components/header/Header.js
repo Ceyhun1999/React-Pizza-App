@@ -8,13 +8,13 @@ export default function Header({ handleShow, number, onTotalPrice }) {
             <Container className="d-flex justify-content-between">
                 <h1 className="text-warning">Pizza App</h1>
                 <Button
-                    variant="success"
+                    variant="warning"
                     onClick={() => {
                         handleShow();
                         onTotalPrice();
                     }}
                 >
-                    <FaShoppingBasket />
+                    <FaShoppingBasket color="white" />
                     <Badge pill bg="light" className="text-dark align-top">
                         {number}
                     </Badge>

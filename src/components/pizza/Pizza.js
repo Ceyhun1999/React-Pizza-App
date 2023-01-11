@@ -47,16 +47,12 @@ export default class Pizza extends Component {
                             <span className="w-50 text-end fs-3">{price[this.state.stateSize]} ₼</span>
                         </div>
                         <div className="text-center pb-3">
-                            <Button
+                            <ButtonAdd 
                                 onClick={() => {
                                     addToOrder(pizza, this.state.stateSize);
                                     handleSmShow();
                                 }}
-                                variant="warning"
-                            >
-                                Sifariş et
-                            </Button>
-                            <ButtonAdd />
+                            ></ButtonAdd>
                         </div>
                     </div>
                 </Card>
