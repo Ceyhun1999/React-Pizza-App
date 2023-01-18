@@ -1,7 +1,6 @@
 import { Container } from "react-bootstrap";
 import Pizzas from "../pizzas/Pizzas";
 import Filter from "../filter/Filter";
-import "./Main.css";
 
 export default function Main(props) {
     return (

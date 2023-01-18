@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Button, Card, Col, Form } from "react-bootstrap";
+import { Card, Col, Form } from "react-bootstrap";
 import ButtonAdd from "../buttonAdd/ButtonAdd";
 import "./Pizza.css";
 
@@ -33,7 +33,7 @@ export default class Pizza extends Component {
                         <p className="magazine_title">{name}</p>
                         <p className="magazine_desc">{desc}</p>
                         <div className="splitter"></div>
-                        <div className="shadow" />
+                        <div className="shadow pb-2" />
                     </div>
                     <div>
                         <div className="d-flex align-items-center mb-3 px-3">
@@ -47,7 +47,7 @@ export default class Pizza extends Component {
                             <span className="w-50 text-end fs-3">{price[this.state.stateSize]} ₼</span>
                         </div>
                         <div className="text-center pb-3">
-                            <ButtonAdd 
+                            <ButtonAdd
                                 onClick={() => {
                                     addToOrder(pizza, this.state.stateSize);
                                     handleSmShow();

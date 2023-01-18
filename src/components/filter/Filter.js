@@ -1,22 +1,21 @@
 import { Container, Form } from "react-bootstrap";
-import "./Filter.css";
 
-export default function Filter({ data, filterData, searchData }) {
+export default function Filter({ filterData, searchData }) {
     const filters = ["all", "chick", "meat", "vegan", "spicy"];
+    const filtersName = ["Hamısı", " Toyuqlu", "Ət ilə", "Vegetarian", "Acılı"];
     return (
-        <div className="filter  border p-4 bg-dark text-light border-0">
-            <Container>
-                <Form.Label htmlFor="search">Search...</Form.Label>
-                <Form.Control type="text" id="search" onInput={(e) => searchData(e)} />
+        <div className="filter border p-4 bg-dark text-light border-0">
+            <Container className="pt-3">
+                <Form.Control placeholder="Axtarış..." type="text" onInput={(e) => searchData(e)} />
                 <br />
-                <Form>
-                    {filters.map((type) => (
+                <Form className="d-md-flex justify-content-around fs-6">
+                    {filters.map((type, index) => (
                         <Form.Check
                             key={type}
                             name="filter1"
                             defaultChecked={type === "all" ? "checked" : ""}
                             inline
-                            label={type.toUpperCase()}
+                            label={filtersName[index]}
                             type="radio"
                             onChange={() => filterData(type)}
                         />

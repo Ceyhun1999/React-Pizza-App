@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Metamorphous&display=swap');
+
 header button {
-    font-size: 2rem !important;
+    font-size: 2rem !important
 }
 
 header button>span {
-    font-size: .8rem !important;
+    font-size: .8rem !important
 }
 
+h1 {
+    font-family: 'Lobster', cursive
+}

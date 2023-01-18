@@ -1,6 +1,5 @@
 import { Component } from "react";
 import { Button, CloseButton, Modal, Table } from "react-bootstrap";
-import "./Cart.css";
 
 export default class Cart extends Component {
     render() {
@@ -65,7 +64,7 @@ export default class Cart extends Component {
                                             <span> ₼</span>
                                         </td>
                                         <td>
-                                            <CloseButton onClick={() => deleteOrder(id)} />
+                                            <CloseButton onClick={() => deleteOrder(id, quant * price[stateSize])} />
                                         </td>
                                     </tr>
                                 );
@@ -80,10 +79,10 @@ export default class Cart extends Component {
                 </Modal.Body>
                 <Modal.Footer className="border-0">
                     <Button variant="secondary" onClick={handleClose}>
-                        Close
+                        Bağla
                     </Button>
                     <Button variant="primary" onClick={handleClose}>
-                        Save Changes
+                        Sifarişi göndər
                     </Button>
                 </Modal.Footer>
             </Modal>

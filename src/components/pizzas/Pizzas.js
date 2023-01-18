@@ -1,6 +1,5 @@
 import { Row } from "react-bootstrap";
 import Pizza from "../pizza/Pizza";
-import "./Pizzas.css";
 
 export default function Pizzas({ data, addToOrder, changePrice, handleSmShow }) {
     return (

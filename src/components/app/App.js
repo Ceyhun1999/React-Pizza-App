@@ -2,7 +2,6 @@ import Header from "../header/Header";
 import Main from "../main/Main";
 import Footer from "../footer/Footer";
 import Cart from "../cart/Cart";
-
 import "./App.css";
 import { Component } from "react";
 
@@ -17,10 +16,10 @@ const data = [
         vegan: false,
         spicy: true,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 5.5,
@@ -39,10 +38,10 @@ const data = [
         vegan: false,
         spicy: true,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 6,
@@ -61,10 +60,10 @@ const data = [
         vegan: false,
         spicy: true,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 7,
@@ -83,10 +82,10 @@ const data = [
         vegan: false,
         spicy: false,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 8.5,
@@ -105,10 +104,10 @@ const data = [
         vegan: true,
         spicy: true,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 8,
@@ -127,10 +126,10 @@ const data = [
         vegan: false,
         spicy: false,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 8,
@@ -149,10 +148,10 @@ const data = [
         vegan: false,
         spicy: true,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 7,
@@ -171,10 +170,10 @@ const data = [
         vegan: false,
         spicy: false,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 8.5,
@@ -193,10 +192,10 @@ const data = [
         vegan: false,
         spicy: false,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 7,
@@ -215,10 +214,10 @@ const data = [
         vegan: true,
         spicy: false,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 8.5,
@@ -237,10 +236,10 @@ const data = [
         vegan: false,
         spicy: true,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 5.5,
@@ -259,10 +258,10 @@ const data = [
         vegan: false,
         spicy: false,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 7,
@@ -281,10 +280,10 @@ const data = [
         vegan: true,
         spicy: true,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 8.5,
@@ -303,10 +302,10 @@ const data = [
         vegan: false,
         spicy: true,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 8.5,
@@ -325,10 +324,10 @@ const data = [
         vegan: false,
         spicy: false,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 7,
@@ -347,10 +346,10 @@ const data = [
         vegan: true,
         spicy: false,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 8.5,
@@ -369,10 +368,10 @@ const data = [
         vegan: false,
         spicy: false,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 9,
@@ -391,10 +390,10 @@ const data = [
         vegan: true,
         spicy: false,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 7,
@@ -413,10 +412,10 @@ const data = [
         vegan: false,
         spicy: false,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 6,
@@ -435,10 +434,10 @@ const data = [
         vegan: false,
         spicy: false,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 8,
@@ -457,10 +456,10 @@ const data = [
         vegan: false,
         spicy: false,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 5.5,
@@ -479,10 +478,10 @@ const data = [
         vegan: false,
         spicy: true,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 8,
@@ -501,10 +500,10 @@ const data = [
         vegan: false,
         spicy: true,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 8,
@@ -523,10 +522,10 @@ const data = [
         vegan: false,
         spicy: true,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 5.5,
@@ -545,10 +544,10 @@ const data = [
         vegan: false,
         spicy: false,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 6,
@@ -567,10 +566,10 @@ const data = [
         vegan: false,
         spicy: false,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 8,
@@ -589,10 +588,10 @@ const data = [
         vegan: false,
         spicy: true,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 6,
@@ -611,10 +610,10 @@ const data = [
         vegan: false,
         spicy: false,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 8,
@@ -633,10 +632,10 @@ const data = [
         vegan: false,
         spicy: false,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 6,
@@ -655,10 +654,10 @@ const data = [
         vegan: false,
         spicy: false,
         size: {
-            xs: "mini, 15sm",
-            sm: "small, 23m",
-            md: "medium, 30sm",
-            xl: "big, 35sm",
+            xs: "Mini pizza, 15sm",
+            sm: "Kiçik, 23m",
+            md: "Orta, 30sm",
+            xl: "Böyük, 35sm",
         },
         price: {
             xs: 8,
@@ -761,11 +760,13 @@ export default class App extends Component {
         this.onTotalPrice();
     };
 
-    deleteOrder = (id) => {
+    deleteOrder = (id, totalPriceRemoved) => {
+        let x = this.state.totalPrice;
         let newOrder = this.state.order.filter((item) => item.id !== id);
         this.setState({
             order: newOrder,
             number: this.state.number - 1,
+            totalPrice: x - totalPriceRemoved,
         });
     };
 
@@ -797,13 +798,6 @@ export default class App extends Component {
         return (
             <div className="App">
                 <Header handleShow={this.handleShow} number={number} onTotalPrice={this.onTotalPrice} />
-                <div
-                    style={{
-                        width: "100%",
-                        height: "calc(100vh - 80px)",
-                        background: "url('./assets/img/headerBg.jpg')",
-                    }}
-                ></div>
                 <Main
                     data={newData}
                     addToOrder={this.addToOrder}
